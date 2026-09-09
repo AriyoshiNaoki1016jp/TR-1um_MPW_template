@@ -1,0 +1,111 @@
+** sch_path: /mnt/c/Users/naoki/opensusi/TR-1um_MPW_template/src/tr_1um_AriyoshiNaoki1016jp.sch
+.subckt tr_1um_AriyoshiNaoki1016jp P1 P2 P3 P4 P5 P6 P7 VSS VDD P15 P14 P13 P12 P11 P10 P9
+*.PININFO P1:B P2:B P3:B P4:B P5:B P6:B P7:B VSS:B VDD:B P15:B P14:B P13:B P12:B P11:B P10:B P9:B
+x1 P1 VDD P2 P15 P14 P3 P4 P13 P5 P12 P6 P11 P10 P7 P9 VSS OSS_FRAME
+MXM1 N1 P2 net1 VSS NMOS w=3.4u l=1u
+MXM3 N1 P3 VDD VDD PMOS w=3.4u l=1u
+MXM4 N1 P2 VDD VDD PMOS w=3.4u l=1u
+MXM2 net1 P3 VSS VSS NMOS w=3.4u l=1u
+MXM5 N2 N1 net2 VSS NMOS w=3.4u l=1u
+MXM6 N2 P3 VDD VDD PMOS w=3.4u l=1u
+MXM7 N2 N1 VDD VDD PMOS w=3.4u l=1u
+MXM8 net2 P3 VSS VSS NMOS w=3.4u l=1u
+MXM9 N3 N1 net3 VSS NMOS w=3.4u l=1u
+MXM10 N3 P2 VDD VDD PMOS w=3.4u l=1u
+MXM11 N3 N1 VDD VDD PMOS w=3.4u l=1u
+MXM12 net3 P2 VSS VSS NMOS w=3.4u l=1u
+MXM13 P N3 net4 VSS NMOS w=3.4u l=1u
+MXM14 P N2 VDD VDD PMOS w=3.4u l=1u
+MXM15 P N3 VDD VDD PMOS w=3.4u l=1u
+MXM16 net4 N2 VSS VSS NMOS w=3.4u l=1u
+MXM17 N5 N4 net5 VSS NMOS w=3.4u l=1u
+MXM18 N5 P VDD VDD PMOS w=3.4u l=1u
+MXM19 N5 N4 VDD VDD PMOS w=3.4u l=1u
+MXM20 net5 P VSS VSS NMOS w=3.4u l=1u
+MXM21 N4 P1 net6 VSS NMOS w=3.4u l=1u
+MXM22 N4 P VDD VDD PMOS w=3.4u l=1u
+MXM23 N4 P1 VDD VDD PMOS w=3.4u l=1u
+MXM24 net6 P VSS VSS NMOS w=3.4u l=1u
+MXM25 N6 N4 net7 VSS NMOS w=3.4u l=1u
+MXM26 N6 P1 VDD VDD PMOS w=3.4u l=1u
+MXM27 N6 N4 VDD VDD PMOS w=3.4u l=1u
+MXM28 net7 P1 VSS VSS NMOS w=3.4u l=1u
+MXM29 P13 N6 net8 VSS NMOS w=3.4u l=1u
+MXM30 P13 N5 VDD VDD PMOS w=3.4u l=1u
+MXM31 P13 N6 VDD VDD PMOS w=3.4u l=1u
+MXM32 net8 N5 VSS VSS NMOS w=3.4u l=1u
+MXM33 P12 N4 net9 VSS NMOS w=3.4u l=1u
+MXM34 P12 N1 VDD VDD PMOS w=3.4u l=1u
+MXM35 P12 N4 VDD VDD PMOS w=3.4u l=1u
+MXM36 net9 N1 VSS VSS NMOS w=3.4u l=1u
+MM1 Cout2 P12 VDD VDD PMOS w=10u l=1u
+MM2 Cout2 P12 VSS VSS NMOS w=5u l=1u
+MM3 P14 Cout2 VDD VDD PMOS w=20u l=1u m=2
+MM4 P14 Cout2 VSS VSS NMOS w=10u l=1u m=2
+MM5 S2 P13 VDD VDD PMOS w=10u l=1u
+MM6 S2 P13 VSS VSS NMOS w=5u l=1u
+MM7 P15 S2 VDD VDD PMOS w=20u l=1u m=2
+MM8 P15 S2 VSS VSS NMOS w=10u l=1u m=2
+MXM37 P6 P4 net10 VSS NMOS w=3.4u l=1u
+MXM38 P6 P5 VDD VDD PMOS w=3.4u l=1u
+MXM39 P6 P4 VDD VDD PMOS w=3.4u l=1u
+MXM40 net10 P5 VSS VSS NMOS w=3.4u l=1u
+MM9 P9 P7 VDD VDD PMOS w=10u l=1u
+MM10 P9 P7 VSS VSS NMOS w=5u l=1u
+MM11 P11 P10 VDD VDD PMOS w=20u l=1u m=2
+MM12 P11 P10 VSS VSS NMOS w=10u l=1u m=2
+.ends
+
+* expanding   symbol:  OSS_FRAME.sym # of pins=16
+** sym_path: /home/naoki/pdk/TR-1um/libs.tech/xschem/TR-1um_frame/OSS_FRAME.sym
+** sch_path: /home/naoki/pdk/TR-1um/libs.tech/xschem/TR-1um_frame/OSS_FRAME.sch
+.subckt OSS_FRAME P1 VDD P2 P15 P14 P3 P4 P13 P5 P12 P6 P11 P10 P7 P9 VSS
+*.PININFO P1:B P2:B P3:B P4:B P5:B P6:B P7:B VSS:B VDD:B P15:B P14:B P13:B P12:B P11:B P10:B P9:B
+x1 VDD P1 VSS OSS_ESD_5V_ANA
+x2 VDD VSS OSS_ESD_5V_VDD
+x3 VDD VSS OSS_ESD_5V_VSS
+x4 VDD P2 VSS OSS_ESD_5V_ANA
+x5 VDD P3 VSS OSS_ESD_5V_ANA
+x6 VDD P4 VSS OSS_ESD_5V_ANA
+x7 VDD P5 VSS OSS_ESD_5V_ANA
+x8 VDD P6 VSS OSS_ESD_5V_ANA
+x9 VDD P7 VSS OSS_ESD_5V_ANA
+x10 VDD P15 VSS OSS_ESD_5V_ANA
+x11 VDD P14 VSS OSS_ESD_5V_ANA
+x12 VDD P13 VSS OSS_ESD_5V_ANA
+x13 VDD P12 VSS OSS_ESD_5V_ANA
+x14 VDD P11 VSS OSS_ESD_5V_ANA
+x15 VDD P10 VSS OSS_ESD_5V_ANA
+x16 VDD P9 VSS OSS_ESD_5V_ANA
+.ends
+
+
+* expanding   symbol:  OSS_ESD_5V_ANA.sym # of pins=4
+** sym_path: /home/naoki/pdk/TR-1um/libs.tech/xschem/TR-1um_frame/OSS_ESD_5V_ANA.sym
+** sch_path: /home/naoki/pdk/TR-1um/libs.tech/xschem/TR-1um_frame/OSS_ESD_5V_ANA.sch
+.subckt OSS_ESD_5V_ANA VDD PAD VSS
+*.PININFO PAD:B VDD:B VSS:B
+MXM1 PAD VDD VDD VDD PMOS w=500u l=2u
+MXM2 PAD VSS VSS VSS NMOSE w=500u l=2u
+.ends
+
+
+* expanding   symbol:  OSS_ESD_5V_VDD.sym # of pins=3
+** sym_path: /home/naoki/pdk/TR-1um/libs.tech/xschem/TR-1um_frame/OSS_ESD_5V_VDD.sym
+** sch_path: /home/naoki/pdk/TR-1um/libs.tech/xschem/TR-1um_frame/OSS_ESD_5V_VDD.sch
+.subckt OSS_ESD_5V_VDD VDD VSS
+*.PININFO VDD:B VSS:B
+MXM1 VDD VDD VDD VDD PMOS w=500u l=2u
+MXM2 VDD VSS VSS VSS NMOSE w=500u l=2u
+.ends
+
+
+* expanding   symbol:  OSS_ESD_5V_VSS.sym # of pins=3
+** sym_path: /home/naoki/pdk/TR-1um/libs.tech/xschem/TR-1um_frame/OSS_ESD_5V_VSS.sym
+** sch_path: /home/naoki/pdk/TR-1um/libs.tech/xschem/TR-1um_frame/OSS_ESD_5V_VSS.sch
+.subckt OSS_ESD_5V_VSS VDD VSS
+*.PININFO VSS:B VDD:B
+MXM1 VSS VDD VDD VDD PMOS w=500u l=2u
+MXM2 VSS VSS VSS VSS NMOSE w=500u l=2u
+.ends
+

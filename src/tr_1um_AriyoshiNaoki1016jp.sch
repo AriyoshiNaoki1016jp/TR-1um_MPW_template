@@ -173,12 +173,12 @@ N 2170 -1110 2250 -1110 {lab=VDD}
 N 2250 -1110 2250 -1070 {lab=VDD}
 N 2080 -1110 2170 -1110 {lab=VDD}
 N 2080 -1110 2080 -1070 {lab=VDD}
-N 2250 -1010 2250 -980 {lab=S1}
-N 2160 -980 2250 -980 {lab=S1}
-N 2160 -980 2160 -930 {lab=S1}
-N 2080 -1010 2080 -980 {lab=S1}
-N 2080 -980 2160 -980 {lab=S1}
-N 2160 -960 2210 -960 {lab=S1}
+N 2250 -1010 2250 -980 {lab=P13}
+N 2160 -980 2250 -980 {lab=P13}
+N 2160 -980 2160 -930 {lab=P13}
+N 2080 -1010 2080 -980 {lab=P13}
+N 2080 -980 2160 -980 {lab=P13}
+N 2160 -960 2210 -960 {lab=P13}
 N 2060 -790 2120 -790 {lab=N5}
 N 2160 -870 2160 -850 {lab=#net8}
 N 2160 -850 2160 -820 {lab=#net8}
@@ -195,12 +195,12 @@ N 700 -510 780 -510 {lab=VDD}
 N 780 -510 780 -470 {lab=VDD}
 N 610 -510 700 -510 {lab=VDD}
 N 610 -510 610 -470 {lab=VDD}
-N 780 -410 780 -380 {lab=Cout1}
-N 690 -380 780 -380 {lab=Cout1}
-N 690 -380 690 -330 {lab=Cout1}
-N 610 -410 610 -380 {lab=Cout1}
-N 610 -380 690 -380 {lab=Cout1}
-N 690 -360 740 -360 {lab=Cout1}
+N 780 -410 780 -380 {lab=P12}
+N 690 -380 780 -380 {lab=P12}
+N 690 -380 690 -330 {lab=P12}
+N 610 -410 610 -380 {lab=P12}
+N 610 -380 690 -380 {lab=P12}
+N 690 -360 740 -360 {lab=P12}
 N 590 -190 650 -190 {lab=N1}
 N 690 -270 690 -250 {lab=#net9}
 N 690 -250 690 -220 {lab=#net9}
@@ -212,8 +212,8 @@ N 700 -460 700 -440 {lab=VDD}
 N 700 -440 780 -440 {lab=VDD}
 N 580 -300 650 -300 {lab=N4}
 N 2100 -900 2120 -900 {lab=N6}
-N 1080 -400 1140 -400 {lab=Cout1}
-N 1080 -260 1140 -260 {lab=Cout1}
+N 1080 -400 1140 -400 {lab=P12}
+N 1080 -260 1140 -260 {lab=P12}
 N 1180 -370 1220 -370 {lab=Cout2}
 N 1180 -290 1220 -290 {lab=Cout2}
 N 1220 -370 1220 -290 {lab=Cout2}
@@ -240,8 +240,8 @@ N 1420 -230 1420 -200 {lab=VSS}
 N 1420 -260 1460 -260 {lab=VSS}
 N 1460 -260 1460 -230 {lab=VSS}
 N 1420 -230 1460 -230 {lab=VSS}
-N 2480 -900 2540 -900 {lab=S1}
-N 2480 -760 2540 -760 {lab=S1}
+N 2480 -900 2540 -900 {lab=P13}
+N 2480 -760 2540 -760 {lab=P13}
 N 2580 -870 2620 -870 {lab=S2}
 N 2580 -790 2620 -790 {lab=S2}
 N 2620 -870 2620 -790 {lab=S2}
@@ -268,6 +268,59 @@ N 2820 -730 2820 -700 {lab=VSS}
 N 2820 -760 2860 -760 {lab=VSS}
 N 2860 -760 2860 -730 {lab=VSS}
 N 2820 -730 2860 -730 {lab=VSS}
+N 770 300 840 300 {lab=P4}
+N 460 300 520 300 {lab=P5}
+N 650 190 650 230 {lab=VDD}
+N 650 230 730 230 {lab=VDD}
+N 730 230 730 270 {lab=VDD}
+N 560 230 650 230 {lab=VDD}
+N 560 230 560 270 {lab=VDD}
+N 730 330 730 360 {lab=P6}
+N 640 360 730 360 {lab=P6}
+N 640 360 640 410 {lab=P6}
+N 560 330 560 360 {lab=P6}
+N 560 360 640 360 {lab=P6}
+N 640 380 690 380 {lab=P6}
+N 540 440 600 440 {lab=P4}
+N 540 550 600 550 {lab=P5}
+N 640 470 640 490 {lab=#net10}
+N 640 490 640 520 {lab=#net10}
+N 640 580 640 630 {lab=VSS}
+N 640 550 690 550 {lab=VSS}
+N 640 440 690 440 {lab=VSS}
+N 560 300 650 300 {lab=VDD}
+N 650 280 650 300 {lab=VDD}
+N 650 300 730 300 {lab=VDD}
+N 1110 310 1170 310 {lab=P7}
+N 1110 450 1170 450 {lab=P7}
+N 1210 340 1250 340 {lab=P9}
+N 1210 420 1250 420 {lab=P9}
+N 1250 340 1250 420 {lab=P9}
+N 1250 380 1310 380 {lab=P9}
+N 1210 250 1210 280 {lab=VDD}
+N 1210 280 1250 280 {lab=VDD}
+N 1250 280 1250 310 {lab=VDD}
+N 1210 310 1250 310 {lab=VDD}
+N 1210 480 1210 510 {lab=VSS}
+N 1210 450 1250 450 {lab=VSS}
+N 1250 450 1250 480 {lab=VSS}
+N 1210 480 1250 480 {lab=VSS}
+N 1350 310 1410 310 {lab=P10}
+N 1350 450 1410 450 {lab=P10}
+N 1450 340 1490 340 {lab=P11}
+N 1450 420 1490 420 {lab=P11}
+N 1490 340 1490 420 {lab=P11}
+N 1490 380 1550 380 {lab=P11}
+N 1450 250 1450 280 {lab=VDD}
+N 1450 280 1490 280 {lab=VDD}
+N 1490 280 1490 310 {lab=VDD}
+N 1450 310 1490 310 {lab=VDD}
+N 1450 480 1450 510 {lab=VSS}
+N 1450 450 1490 450 {lab=VSS}
+N 1490 450 1490 480 {lab=VSS}
+N 1450 480 1490 480 {lab=VSS}
+N 740 -360 770 -360 {lab=P12}
+N 2210 -960 2230 -960 {lab=P13}
 C {devices/title.sym} 0 0 0 0 {name=l1 author="jun1okamura"}
 C {OSS_FRAME.sym} 120 -510 0 0 {name=x1}
 C {devices/iopin.sym} 60 -580 0 1 {name=p1 lab=P1}
@@ -663,7 +716,7 @@ C {devices/lab_pin.sym} 1600 -790 0 0 {name=p50 sig_type=std_logic lab=P1}
 C {devices/lab_pin.sym} 1600 -900 0 0 {name=p51 sig_type=std_logic lab=N4}
 C {devices/lab_pin.sym} 1980 -1040 0 0 {name=p52 sig_type=std_logic lab=N5
 }
-C {devices/lab_pin.sym} 2210 -960 0 1 {name=p53 sig_type=std_logic lab=S1}
+C {devices/lab_pin.sym} 2210 -960 0 1 {name=p53 sig_type=std_logic lab=P13}
 C {devices/lab_pin.sym} 2360 -1040 2 0 {name=p54 sig_type=std_logic lab=N6}
 C {TR-1umLIB/MN.sym} 2120 -900 0 0 {name=XM29
 model=NMOS
@@ -717,7 +770,7 @@ C {devices/lab_pin.sym} 2060 -790 0 0 {name=p55 sig_type=std_logic lab=N5}
 C {devices/lab_pin.sym} 2100 -900 0 0 {name=p56 sig_type=std_logic lab=N6}
 C {devices/lab_pin.sym} 510 -440 0 0 {name=p57 sig_type=std_logic lab=N1
 }
-C {devices/lab_pin.sym} 740 -360 0 1 {name=p58 sig_type=std_logic lab=Cout1}
+C {devices/lab_pin.sym} 740 -360 0 1 {name=p58 sig_type=std_logic lab=P12}
 C {devices/lab_pin.sym} 890 -440 2 0 {name=p59 sig_type=std_logic lab=N4}
 C {TR-1umLIB/MN.sym} 650 -300 0 0 {name=XM33
 model=NMOS
@@ -859,8 +912,8 @@ C {devices/lab_pin.sym} 2160 -710 0 0 {name=p105 sig_type=std_logic lab=VSS
 }
 C {devices/lab_pin.sym} 2140 -1310 0 0 {name=p106 sig_type=std_logic lab=VSS
 }
-C {devices/lab_pin.sym} 1080 -400 0 0 {name=p113 sig_type=std_logic lab=Cout1}
-C {devices/lab_pin.sym} 1080 -260 0 0 {name=p114 sig_type=std_logic lab=Cout1}
+C {devices/lab_pin.sym} 1080 -400 0 0 {name=p113 sig_type=std_logic lab=P12}
+C {devices/lab_pin.sym} 1080 -260 0 0 {name=p114 sig_type=std_logic lab=P12}
 C {devices/lab_pin.sym} 1280 -330 2 0 {name=p115 sig_type=std_logic lab=Cout2}
 C {TR-1umLIB/MP.sym} 1140 -400 0 0 {name=M1
 model=PMOS
@@ -921,8 +974,8 @@ C {devices/lab_pin.sym} 1180 -200 0 0 {name=p121 sig_type=std_logic lab=VSS
 }
 C {devices/lab_pin.sym} 1420 -200 0 0 {name=p122 sig_type=std_logic lab=VSS
 }
-C {devices/lab_pin.sym} 2480 -900 0 0 {name=p107 sig_type=std_logic lab=S1}
-C {devices/lab_pin.sym} 2480 -760 0 0 {name=p108 sig_type=std_logic lab=S1}
+C {devices/lab_pin.sym} 2480 -900 0 0 {name=p107 sig_type=std_logic lab=P13}
+C {devices/lab_pin.sym} 2480 -760 0 0 {name=p108 sig_type=std_logic lab=P13}
 C {devices/lab_pin.sym} 2680 -830 2 0 {name=p109 sig_type=std_logic lab=S2}
 C {TR-1umLIB/MP.sym} 2540 -900 0 0 {name=M5
 model=PMOS
@@ -983,3 +1036,132 @@ C {devices/lab_pin.sym} 2580 -700 0 0 {name=p125 sig_type=std_logic lab=VSS
 }
 C {devices/lab_pin.sym} 2820 -700 0 0 {name=p126 sig_type=std_logic lab=VSS
 }
+C {devices/lab_pin.sym} 460 300 0 0 {name=p127 sig_type=std_logic lab=P5}
+C {devices/lab_pin.sym} 690 380 0 1 {name=p128 sig_type=std_logic lab=P6}
+C {devices/lab_pin.sym} 840 300 2 0 {name=p129 sig_type=std_logic lab=P4}
+C {TR-1umLIB/MN.sym} 600 440 0 0 {name=XM37
+model=NMOS
+w=3.4u
+l=1u
+m=1
+spiceprefix=X
+as=0
+ad=0
+ps=0
+pd=0
+nrd=0
+nrs=0}
+C {TR-1umLIB/MP.sym} 520 300 0 0 {name=XM38
+model=PMOS
+w=3.4u
+l=1u
+m=1
+spiceprefix=X
+as=0
+ad=0
+ps=0
+pd=0
+nrd=0
+nrs=0}
+C {TR-1umLIB/MP.sym} 770 300 0 1 {name=XM39
+model=PMOS
+w=3.4u
+l=1u
+m=1
+spiceprefix=X
+as=0
+ad=0
+ps=0
+pd=0
+nrd=0
+nrs=0}
+C {TR-1umLIB/MN.sym} 600 550 0 0 {name=XM40
+model=NMOS
+w=3.4u
+l=1u
+m=1
+spiceprefix=X
+as=0
+ad=0
+ps=0
+pd=0
+nrd=0
+nrs=0}
+C {devices/lab_pin.sym} 540 440 0 0 {name=p130 sig_type=std_logic lab=P4}
+C {devices/lab_pin.sym} 540 550 0 0 {name=p131 sig_type=std_logic lab=P5}
+C {devices/lab_pin.sym} 650 190 0 0 {name=p132 sig_type=std_logic lab=VDD
+}
+C {devices/lab_pin.sym} 650 280 0 0 {name=p133 sig_type=std_logic lab=VDD
+}
+C {devices/lab_pin.sym} 690 550 2 0 {name=p134 sig_type=std_logic lab=VSS
+}
+C {devices/lab_pin.sym} 690 440 2 0 {name=p135 sig_type=std_logic lab=VSS
+}
+C {devices/lab_pin.sym} 640 630 0 0 {name=p136 sig_type=std_logic lab=VSS
+}
+C {devices/lab_pin.sym} 1110 310 0 0 {name=p137 sig_type=std_logic lab=P7}
+C {devices/lab_pin.sym} 1110 450 0 0 {name=p138 sig_type=std_logic lab=P7}
+C {devices/lab_pin.sym} 1310 380 2 0 {name=p139 sig_type=std_logic lab=P9}
+C {TR-1umLIB/MP.sym} 1170 310 0 0 {name=M9
+model=PMOS
+w=10u
+l=1u
+m=1
+spiceprefix=X
+as=0
+ad=0
+ps=0
+pd=0
+nrd=0
+nrs=0}
+C {TR-1umLIB/MN.sym} 1170 450 0 0 {name=M10
+model=NMOS
+w=5u
+l=1u
+m=1
+spiceprefix=X
+as=0
+ad=0
+ps=0
+pd=0
+nrd=0
+nrs=0}
+C {devices/lab_pin.sym} 1350 310 0 0 {name=p140 sig_type=std_logic lab=P10}
+C {devices/lab_pin.sym} 1350 450 0 0 {name=p141 sig_type=std_logic lab=P10}
+C {devices/lab_pin.sym} 1550 380 2 0 {name=p142 sig_type=std_logic lab=P11}
+C {TR-1umLIB/MP.sym} 1410 310 0 0 {name=M11
+model=PMOS
+w=20u
+l=1u
+m=2
+spiceprefix=X
+as=0
+ad=0
+ps=0
+pd=0
+nrd=0
+nrs=0}
+C {TR-1umLIB/MN.sym} 1410 450 0 0 {name=M12
+model=NMOS
+w=10u
+l=1u
+m=2
+spiceprefix=X
+as=0
+ad=0
+ps=0
+pd=0
+nrd=0
+nrs=0}
+C {devices/lab_pin.sym} 1210 250 0 0 {name=p143 sig_type=std_logic lab=VDD
+}
+C {devices/lab_pin.sym} 1450 250 0 0 {name=p144 sig_type=std_logic lab=VDD
+}
+C {devices/lab_pin.sym} 1210 510 0 0 {name=p145 sig_type=std_logic lab=VSS
+}
+C {devices/lab_pin.sym} 1450 510 0 0 {name=p146 sig_type=std_logic lab=VSS
+}
+C {devices/code.sym} 80 -900 0 0 {name=TR-1um_MODELS
+only_toplevel=true
+lvs_ignore=true
+value=".include /home/naoki/pdk/TR-1um/libs.tech/spice/models/ip62_models"}
