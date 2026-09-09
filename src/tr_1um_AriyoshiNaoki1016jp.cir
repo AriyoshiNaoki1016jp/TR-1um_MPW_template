@@ -1,5 +1,5 @@
-** sch_path: /mnt/c/Users/naoki/opensusi/TR-1um_MPW_template/src/tr_1um_AriyoshiNaoki1016jp.sch
-.subckt tr_1um_AriyoshiNaoki1016jp P1 P2 P3 P4 P5 P6 P7 VSS VDD P15 P14 P13 P12 P11 P10 P9
+** sch_path: /mnt/c/Users/naoki/opensusi/TR-1um_MPW_template/src/tr_1um_AriyoshiNaoki1016jp_bufferadd_ver2.sch
+.subckt tr_1um_AriyoshiNaoki1016jp_bufferadd_ver2 P1 P2 P3 P4 P5 P6 P7 VSS VDD P15 P14 P13 P12 P11 P10 P9
 *.PININFO P1:B P2:B P3:B P4:B P5:B P6:B P7:B VSS:B VDD:B P15:B P14:B P13:B P12:B P11:B P10:B P9:B
 x1 P1 VDD P2 P15 P14 P3 P4 P13 P5 P12 P6 P11 P10 P7 P9 VSS OSS_FRAME
 MXM1 N1 P2 net1 VSS NMOS w=3.4u l=1u
@@ -30,22 +30,30 @@ MXM25 N6 N4 net7 VSS NMOS w=3.4u l=1u
 MXM26 N6 P1 VDD VDD PMOS w=3.4u l=1u
 MXM27 N6 N4 VDD VDD PMOS w=3.4u l=1u
 MXM28 net7 P1 VSS VSS NMOS w=3.4u l=1u
-MXM29 S1 N6 net8 VSS NMOS w=3.4u l=1u
-MXM30 S1 N5 VDD VDD PMOS w=3.4u l=1u
-MXM31 S1 N6 VDD VDD PMOS w=3.4u l=1u
+MXM29 P13 N6 net8 VSS NMOS w=3.4u l=1u
+MXM30 P13 N5 VDD VDD PMOS w=3.4u l=1u
+MXM31 P13 N6 VDD VDD PMOS w=3.4u l=1u
 MXM32 net8 N5 VSS VSS NMOS w=3.4u l=1u
-MXM33 Cout1 N4 net9 VSS NMOS w=3.4u l=1u
-MXM34 Cout1 N1 VDD VDD PMOS w=3.4u l=1u
-MXM35 Cout1 N4 VDD VDD PMOS w=3.4u l=1u
+MXM33 P12 N4 net9 VSS NMOS w=3.4u l=1u
+MXM34 P12 N1 VDD VDD PMOS w=3.4u l=1u
+MXM35 P12 N4 VDD VDD PMOS w=3.4u l=1u
 MXM36 net9 N1 VSS VSS NMOS w=3.4u l=1u
-MM1 Cout2 Cout1 VDD VDD PMOS w=10u l=1u
-MM2 Cout2 Cout1 VSS VSS NMOS w=5u l=1u
+MM1 Cout2 P12 VDD VDD PMOS w=10u l=1u
+MM2 Cout2 P12 VSS VSS NMOS w=5u l=1u
 MM3 P14 Cout2 VDD VDD PMOS w=20u l=1u m=2
 MM4 P14 Cout2 VSS VSS NMOS w=10u l=1u m=2
-MM5 S2 S1 VDD VDD PMOS w=10u l=1u
-MM6 S2 S1 VSS VSS NMOS w=5u l=1u
+MM5 S2 P13 VDD VDD PMOS w=10u l=1u
+MM6 S2 P13 VSS VSS NMOS w=5u l=1u
 MM7 P15 S2 VDD VDD PMOS w=20u l=1u m=2
 MM8 P15 S2 VSS VSS NMOS w=10u l=1u m=2
+MXM37 P6 P4 net10 VSS NMOS w=3.4u l=1u
+MXM38 P6 P5 VDD VDD PMOS w=3.4u l=1u
+MXM39 P6 P4 VDD VDD PMOS w=3.4u l=1u
+MXM40 net10 P5 VSS VSS NMOS w=3.4u l=1u
+MM9 P9 P7 VDD VDD PMOS w=10u l=1u
+MM10 P9 P7 VSS VSS NMOS w=5u l=1u
+MM11 P11 P10 VDD VDD PMOS w=20u l=1u m=2
+MM12 P11 P10 VSS VSS NMOS w=10u l=1u m=2
 .ends
 
 * expanding   symbol:  OSS_FRAME.sym # of pins=16
